@@ -30,8 +30,11 @@ nav.vertical {
   nav.vertical > ul {
     list-style-type: none;
   }
+    nav.vertical > ul > li{
+      display: inline;
+    }
     nav.vertical > ul > li a {
-      display: block;
+      /*display: block;*/
       text-decoration: none;
       color: white;
     }
