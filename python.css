@@ -2,14 +2,22 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  border-style: dotted;
+  /*border-style: dotted;
   border-color: green;
-  border-width: 1px;
+  border-width: 1px;*/
 }
+/*jQuery Styling Section*/
+.boldtext {
+  font-weight: bold;
+  font-size: 18px;
+}
+.button {
+   margin: 4px;
+   cursor: pointer;
+ }
 .wrapper {
   width: 970px;
   background-color: #265175;
-  padding: 10px;
   margin: 20px, auto;
 }
 .header {
@@ -18,13 +26,22 @@
   margin-bottom: 10px;
   padding: 10px;
 }
+.header > p {
+  background color: grey;
+  height: 50px;
+  margin: 30px;
+  display: inline-block;
+}
 nav.vertical {
   border-radius: 4px;
+  width: 850px;
   padding: 5px;
   margin: 20px;
   background-color: #487fab;
   box-shadow: 0 5px 0  rgba(0,0,0,.15);
   overflow: hidden;
+  position: relative;
+  left: 60px;
   text-align: center;
 }
   nav.vertical > ul {
@@ -32,9 +49,11 @@ nav.vertical {
   }
     nav.vertical >ul >li {
       display: inline;
+      font-size: 20px;
     }
     nav.vertical > ul > li a {
       /*display: block;*/
+      padding: 16px;
       text-decoration: none;
       color: white;
     }
@@ -55,7 +74,8 @@ div.main_menu {
   padding-left: 5px;
 }
   div.main_menu > ul {
-    list-style-type: none;
+    list-style-type: circle;
+    list-style-position: inside;
     color: yellow;
   }
   div.main_menu > ul > li a {
@@ -107,23 +127,31 @@ div.infosec {
   background-color: white;
 }
   div.gettingstarted {
-      width: 300px;
+      width: 360px;
+      border-top-style: solid;
+      border-top-color: lightblue;
+      border-top-width: 3px;
       display: inline-block;
       position: relative;
+      left: 30px;
+      bottom: 22px;
       text-align: center;
-      left: 20px;
-      padding-right: 30px;
+      margin: 5px 5px 5px 30px;
+      padding-right: 70px;
   }
   div.applications {
-    width: 300px;
+    width: 360px;
     display: inline-block;
+    border-top-style: solid;
+    border-top-color: lightblue;
+    border-top-width: 3px;
     text-align: center;
-    position: relative;
-    left: 20px;
-    padding-right: 30px;
+    margin: 10px 30px 5px 30px;
+    padding-right: 70px;
   }
   div.gettingstarted > h4 {
     text-align: center;
+    margin: 4px;
   }
   div.gettingstarted > p {
     text-align: center;
@@ -133,14 +161,18 @@ div.infosec {
     list-style-type: square;
     color: black;
     padding: 2px;
+    position: relative;
+    left: 30px;
   }
   div.gettingstarted > ul > li a {
-    color: blue;
+    color: #306694;
+    text-decoration: none;
     font-size: 12px;
     text-align: center;
   }
   div.applications > h4 {
     text-align: center;
+    margin: 4px;
   }
   div.applications > p {
     text-align: center;
@@ -150,13 +182,38 @@ div.infosec {
     list-style-type: square;
     color: black;
     padding: 2px;
+    position: relative;
+    left: 30px;
   }
   div.applications > ul > li a {
-    color: blue;
+    color: #306694;
     font-size: 12px;
+    text-decoration: none;
     text-align: center;
   }
   div.applications a {
-    color: blue;
+    color: #306694;
     font-size: 12px;
+  }
+div.footer {
+  background-color: #306694;
+  text-align: center;
+  padding: 40px 0px 5px 60px;
+}
+  div.footer ul {
+    list-style-type: none;
+  }
+    div.footer ul > li {
+    display: inline;
+    font-size: 16px;
+    }
+      div.footer ul > li a {
+        padding: 20px;
+        text-decoration: none;
+        color: lightblue;
+      }
+  div.footer p {
+    font-size: 8px;
+    color: lightblue;
+    margin-top: 10px;
   }

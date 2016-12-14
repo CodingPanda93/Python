@@ -5,11 +5,61 @@
     <title>Python</title>
     <meta name="description" content="Python">
     <link rel="stylesheet" type="text/css" href="python.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('img').click(function(){
+        $( this ).css({
+          width: function( index, value ) {
+          return parseFloat( value ) * 1.2;
+          },
+          height: function( index, value ) {
+          return parseFloat( value ) * 1.2;
+          }
+          });
+        });
+      $('a').focus(function() {
+        alert( "You cant leave this page." );
+        });
+      $('pre').addClass("boldtext");
+
+      $('button').click(function() {
+        var text = $(this).text();
+        $("input").val(text);
+      });
+      $( "button" ).click(function() {
+          $( "input" ).toggle();
+      });
+      //$( "ul li" ).text(function( index ) {
+        //return "item number " + ( index + 1 );
+      //});
+      //To find how many div classes are being used
+      $( "div" )
+        .attr( "class", function() {
+          console.log('div-class');
+        })
+        .each(function() {
+        });
+      $(".gettingstarted").click(function(){
+        $( "p" ).slideToggle( "slow", function() {
+    // Animation complete.
+        });
+      });
+      $(".applications").click(function(){
+        $( "p" ).slideToggle( "slow", function() {
+    // Animation complete.
+        });
+      });
+    });
+    </script>
   </head>
   <body>
     <div class="wrapper">
       <div class="header">
         <img src="python.png" alt="python_logo" style="width:330px;height:100px;">
+        <button>Search Site</button>
+        <input type="text" value=" ">
+
       </div>
       <nav class="vertical">
         <ul>
@@ -76,6 +126,13 @@
             </ul>
         </div>
       </div>
-      <div class="footer"></div>
+      <div class="footer">
+        <ul>
+          <li><a href="http://www.w3schools.com/html/">Help and General Contact</a></li>
+          <li><a href="http://www.w3schools.com/html/">Diversity Initiatives</a></li>
+          <li><a href="http://www.w3schools.com/html/">Submit Website Bugs</a></li>
+        <ul>
+          <p>Copyright 2001-2016</p>
+      </div>
     </div>
   </body>
